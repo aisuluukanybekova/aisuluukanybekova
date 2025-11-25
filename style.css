@@ -29,8 +29,6 @@ body {
     gap: 80px;
 }
 
-/* Sidebar */
-
 .sidebar {
     width: 260px;
     display: flex;
@@ -102,8 +100,6 @@ body {
     width: 32px;
 }
 
-/* Content */
-
 .content {
     flex: 1;
     background: linear-gradient(145deg, var(--panel), var(--bg-soft));
@@ -139,6 +135,10 @@ body {
     margin: 0 0 20px;
     font-weight: 680;
     letter-spacing: 0.02em;
+}
+
+.title-center {
+    text-align: center;
 }
 
 .subtitle {
@@ -182,6 +182,69 @@ body {
 .section-contact {
     border-top: 1px solid #e3e1f2;
     padding-top: 18px;
+}
+
+.contact-card {
+    margin-top: 10px;
+    padding: 16px 18px 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 30px rgba(31, 41, 55, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-label {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.contact-link {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: all 0.2s ease;
+}
+
+.contact-link.primary {
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    border-bottom-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+.contact-links a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: all 0.2s ease;
+}
+
+.contact-links a:hover {
+    border-bottom-color: var(--accent);
+    transform: translateX(3px);
 }
 
 .email {
@@ -243,8 +306,6 @@ body {
     color: #c0c3d2;
 }
 
-/* Animations */
-
 @keyframes floatIn {
     0% {
         opacity: 0;
@@ -281,8 +342,6 @@ body {
         box-shadow: 0 10px 24px rgba(55, 48, 163, 0.18);
     }
 }
-
-/* Responsive */
 
 @media (max-width: 960px) {
     .page {
